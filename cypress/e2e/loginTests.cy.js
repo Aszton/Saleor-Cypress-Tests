@@ -15,6 +15,5 @@ describe("Login Tests", () => {
     cy.fillLoginInputs(`${user.fail}`, `${user.fail}`)
     cy.clickSignInButton()
     cy.isLoginErrorMessageDisplayed()
-    console.log("hello world!")
   });
 });
