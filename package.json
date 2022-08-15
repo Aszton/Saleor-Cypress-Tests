@@ -1,0 +1,26 @@
+{
+  "name": "saleor-cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "electron-tests": "npx cypress run",
+    "chrome-tests": "npx cypress run --browser chrome",
+    "chrome-visible": "npx cypress run --browser chrome --headed",
+    "cypress-dashboad": "npx cypress run --record --key 63fbb5eb-105a-45ba-acca-3d894e4db877",
+    "start": "./node_modules/.bin/json-server --static . data.json -m middleware.js --config json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aszton/Saleor-Cypress-Tests.git"
+  },
+  "author": "Bartosz Kuczera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aszton/Saleor-Cypress-Tests/issues"
+  },
+  "homepage": "https://github.com/Aszton/Saleor-Cypress-Tests#readme",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  }
+}
