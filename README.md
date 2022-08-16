@@ -5,7 +5,7 @@
 1. Install [Node JS](https://nodejs.org/en/download/)
 2. Clone the project to your local machine:
 ```ruby
-git clone https://github.com/Aszton/Cypress-CI.git
+git clone https://github.com/Aszton/Saleor-Cypress-Tests
 ```
 3. In the terminal go to the folder with project and install Cypress:
 ```ruby
