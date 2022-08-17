@@ -1,5 +1,4 @@
 import { loginSelectors } from "./selectors/loginSelectors";
-import { userAccountSelectors } from "./selectors/userAccountSelectors";
 
       Cypress.Commands.add("openLoginPage", () => {
             cy.visit("/");
@@ -15,10 +14,6 @@ import { userAccountSelectors } from "./selectors/userAccountSelectors";
             cy.get(loginSelectors.signInButton).click()
             cy.on('uncaught:exception', (err, runnable) => {
                   return false })
-      });
-      Cypress.Commands.add("isUserLoginCorrectly", () => {
-            cy.get(userAccountSelectors.ordersTab).should('be.visible');
-            cy.title().should("eq", "Dashboard | Saleor e-commerce");
       });
 
       Cypress.Commands.add("isLoginErrorMessageDisplayed", () => {
